@@ -63,12 +63,20 @@
                 <i class="fa fa-hotel"></i>
                 <i class="fa fa-plane"></i>
                 <i class="fa fa-car"></i>
-
+            </a>
+        </div>
+        <div class="container">
+            <a class="stack" href="#">
+                <div class="fa main">Main</div>
+                <div class="fa ">Text 1</div>
+                <div class="fa">Text 2</div>
+                <div class="fa ">Text 3</div>
             </a>
         </div>
     </div>
     <script type="text/javascript">
         var radios = document.querySelectorAll('.fa.fa-plus-circle');
+        var text = document.querySelectorAll('.main');
 
 
         fancySelector.createRadioSelector(radios[0]);
@@ -82,6 +90,7 @@
             minimumItems: 1000,
             startingAngle: fancySelector.RADS_180
         });
+        fancySelector.createRadioSelector(text[0]);
 
     </script>
 </body>
